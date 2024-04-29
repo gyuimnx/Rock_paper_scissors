@@ -13,33 +13,18 @@ public class rock_paper_scissors {
 		computer_pick = hand[pick];
 		
 		System.out.println("컴퓨터: "+computer_pick);
-			
-		switch(my_pick) {
-			case "가위":
-				if (computer_pick == "가위") {
-					System.out.println("비겼습니다.");
-				}else if (computer_pick == "바위") {
-					System.out.println("졌습니다.");
-				}else if (computer_pick == "보") {
-					System.out.println("이겼습니다.");
-				} break;
-			case "바위":
-				if (computer_pick == "가위") {
-					System.out.println("이겼습니다.");
-				}else if (computer_pick == "바위") {
-					System.out.println("비겼습니다.");
-				}else if (computer_pick == "보") {
-					System.out.println("졌습니다.");
-				} break;
-			case "보":
-				if (computer_pick == "가위") {
-					System.out.println("졌습니다.");
-				}else if (computer_pick == "바위") {
-					System.out.println("이겼습니다.");
-				}else if (computer_pick == "보") {
-					System.out.println("비겼습니다.");
-				} break;
+		
+		if (my_pick.equals(computer_pick)) {
+			System.out.println("비겼습니다.");
+		}else if
+		((my_pick.equals("가위") && computer_pick.equals("보")) || 
+		(my_pick.equals("바위")&&computer_pick.equals("가위")) || 
+		(my_pick.equals("보")&&computer_pick.equals("바위"))) {
+			System.out.println("이겼습니다.");
+		}else {
+			System.out.println("졌습니다.");
 		}
+
 		s.close();
 	}
 }
