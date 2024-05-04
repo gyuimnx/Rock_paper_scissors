@@ -6,7 +6,8 @@ public class RPS {
 		
 		String my_pick, computer_pick;
 		
-		do {
+		
+		while(true) {
 			System.out.println("안 내면 진다, 가위 바위 보!: ");
 			my_pick = s.next();
 			
@@ -32,8 +33,7 @@ public class RPS {
 			} else {
 				System.out.println("가위, 바위, 보 중에 선택하세요.");
 			}
-		} while (true);
-			
+		}
 		s.close();
 	}
 }

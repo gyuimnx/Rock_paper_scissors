@@ -4,7 +4,7 @@ public class RPS_oneout {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 				
-		do {
+		while(true) {
 			System.out.println("나의 첫번째 선택: ");
 			String my_first_pick = s.next();
 			System.out.println("나의 두번째 선택: ");
@@ -48,9 +48,8 @@ public class RPS_oneout {
 				}
 			}else {
 				System.out.println("가위, 바위, 보 중에 선택하세요.");
-				}
-		} while (true);
-//			
+			}	
+		}
 		s.close();
 	}
 }
