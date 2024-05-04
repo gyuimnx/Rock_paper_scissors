@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class RPS_oneout {
+public class lmg20211504_mid2 {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 				
