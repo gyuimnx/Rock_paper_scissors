@@ -24,10 +24,10 @@ public class RPS {
 				((my_pick.equals("가위") && computer_pick.equals("보")) || 
 				(my_pick.equals("바위")&&computer_pick.equals("가위")) || 
 				(my_pick.equals("보")&&computer_pick.equals("바위"))) {
-					System.out.println("이겼습니다.");
+					System.out.println("당신이 이겼습니다.");
 					break;
 				}else {
-					System.out.println("졌습니다.");
+					System.out.println("당신이 졌습니다.");
 					break;
 				}
 			} else {
