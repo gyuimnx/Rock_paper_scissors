@@ -5,6 +5,7 @@ public class RPS_oneout {
 		Scanner s = new Scanner(System.in);
 				
 		while(true) {
+			System.out.println("안 내면 진다, 가위 바위 보!");
 			System.out.println("나의 첫번째 선택: ");
 			String my_first_pick = s.next();
 			System.out.println("나의 두번째 선택: ");
