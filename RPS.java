@@ -10,9 +10,7 @@ public class RPS {
 			System.out.println("안 내면 진다, 가위 바위 보!: ");
 			my_pick = s.next();
 			
-			if (!my_pick.equals("가위") && !my_pick.equals("바위") && !my_pick.equals("보")) {
-				System.out.println("가위, 바위, 보 중에 선택하세요.");
-			} else {
+			if (my_pick.equals("가위") || my_pick.equals("바위") || my_pick.equals("보")) {
 				String[] hands = {"가위", "바위", "보"};
 				int pick = (int) (Math.random() * 3);
 				computer_pick = hands[pick];
@@ -31,6 +29,8 @@ public class RPS {
 					System.out.println("졌습니다.");
 					break;
 				}
+			} else {
+				System.out.println("가위, 바위, 보 중에 선택하세요.");
 			}
 		} while (true);
 			
